@@ -1,5 +1,5 @@
 import ExpenseItem from "./ExpenseItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 import './ExpenseItems.css';
 function ExpenseItems(props) {
     return (
@@ -7,6 +7,7 @@ function ExpenseItems(props) {
         {props.expenses.map((expense) =>(
   <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date} />
 ))}
+
        </Card>
     );
 }
