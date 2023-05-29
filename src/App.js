@@ -1,5 +1,6 @@
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
+// import ExpenseItem from './components/ExpenseItem';
+import ExpenseItems from './components/ExpenseItems';
 const expenses  = [
   { id: 'e1', title: 'Toilet Paper', amount: 94.12, date: new Date(2020, 7, 14), },
   { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12), },
@@ -11,9 +12,9 @@ function App() {
   return (
     <div className="App">
 
-{expenses.map((expense) =>(
-  <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date} />
-))}
+
+  <ExpenseItems expenses = {expenses} />
+
 
 
       {/* // <ExpenseItem title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date} />
