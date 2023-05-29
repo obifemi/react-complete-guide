@@ -7,8 +7,12 @@ const ExpenseForm = () => {
      const [enteredDate, setEnteredDate] = useState('');
 
      const titleChangeHandler = (event) => {
-            setEnteredTitle(event.target.value);
-            console.log(event.target.value);
+            setEnteredTitle((prevState)=>{
+                return {...prevState, enteredTitle: event.target.value};
+                
+            });
+            console.log(enteredTitle);
+            
         };
     const amountChangeHandler = (event) => {
         setEnteredAmount(event.target.value);
