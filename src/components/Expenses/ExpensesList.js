@@ -7,7 +7,7 @@ const ExpensesList = (props) => {
 
   return (
     <>
-     { props.items.length === 0 && <p>No expenses found.</p> }
+     { props.items.length === 0 && <p className='expenses-list__fallback'>No expenses found.</p> }
 
     <ul className='expenses-list'>
         
