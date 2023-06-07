@@ -91,13 +91,16 @@ const ExpenseForm = (props) => {
             onChange={dateChangeHandler}
           />
         </div>
-        <button type='button' className='new-expense__actions ' onClick={addNewExpenseHandler} style={{display: "block"}}  >Cancel</button>
+        <button type='button' className='new-expense__actions cancel ' onClick={addNewExpenseHandler} style={{display: "block"}}  >Cancel</button>
       </div>
+     
+    
+
      
       
      }
       <div className=' new-expense__actions'>
-        <button type='submit' onClick={addNewExpenseHandler} >Add Expense</button>
+        <button type='submit' onClick={addNewExpenseHandler}  >Add Expense</button>
       </div>
       
 

@@ -20,10 +20,19 @@
     width: 20rem;
     max-width: 100%;
   }
+  .cancel{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    position: absolute;
+    
+    margin-top: 169px;
+  }
   
-  .new-expense__actions {
-    text-align: right;
-  }
-  .center{
+  /* .new-expense__actions {
     text-align: center;
-  }
+  } */
+  /* .center{
+    text-align: center;
+  } */
